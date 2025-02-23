@@ -11,8 +11,8 @@ Module rollOfTheDice
     Sub Main()
         Dim beanCounter(12) As Integer
 
-        For i = 1 To 1000000
-            beanCounter(RandomNumberBetween(2, 12)) += 1
+        For i = 1 To 1000
+            beanCounter(randomNumberBetween(2, 12)) += 1
         Next
 
         Console.WriteLine(StrDup(120, "_"))
