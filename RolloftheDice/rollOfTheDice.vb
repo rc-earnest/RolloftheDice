@@ -15,21 +15,21 @@ Module rollOfTheDice
             beanCounter(randomNumberBetween(2, 12)) += 1
         Next
 
-        Console.WriteLine(StrDup(120, "_"))
+        Console.WriteLine(StrDup(70, "_"))
 
         For i = 2 To 12
-            Console.Write($"{CStr(i).PadLeft(8)}|")
+            Console.Write($"{CStr(i).PadLeft(5)}|")
         Next
 
         Console.WriteLine()
-        Console.WriteLine(StrDup(120, "_"))
+        Console.WriteLine(StrDup(70, "_"))
 
         For i = 2 To 12
-            Console.Write($"{CStr(beanCounter(i)).PadLeft(8)}|")
+            Console.Write($"{CStr(beanCounter(i)).PadLeft(5)}|")
         Next
 
         Console.WriteLine()
-        Console.WriteLine(StrDup(120, "_"))
+        Console.WriteLine(StrDup(70, "_"))
     End Sub
     Function randomNumberBetween(min As Integer, max As Integer) As Integer
         Randomize()
